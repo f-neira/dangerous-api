@@ -1,0 +1,31 @@
+# virtual environment
+venv/
+.env
+
+# python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# static files
+staticfiles/
+
+# database
+db.sqlite3
+
+# backups
+BACKUP/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# logs
+*.log
+
+# vscode
+.vscode

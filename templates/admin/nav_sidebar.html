@@ -1,0 +1,13 @@
+{% load i18n static %}
+<button class="sticky toggle-nav-sidebar inline-flex items-center justify-center text-slate-200" id="toggle-nav-sidebar" aria-label="{% translate 'Toggle navigation' %}"></button>
+<nav class="sticky" id="nav-sidebar" aria-label="{% translate 'Sidebar' %}">
+  <div class="px-3 pt-5 pb-2">
+    <input type="search" id="nav-filter"
+           placeholder="{% translate 'Type to filter' %}"
+           aria-label="{% translate 'Filter navigation items' %}"
+           class="w-full rounded-full border border-slate-500/40 bg-slate-900/40 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-400">
+  </div>
+  <div class="px-2 pb-4">
+    {% include 'admin/app_list.html' with app_list=available_apps show_changelinks=False %}
+  </div>
+</nav>
